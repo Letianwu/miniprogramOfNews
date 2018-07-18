@@ -1,0 +1,56 @@
+/* pages/detail/detail.wxss */
+.newsDetail {
+  width: 90%;
+  height: auto;
+  margin: 0 5%;
+}
+
+.newsTitle {
+  font-size: 50rpx;
+  padding: 2% 0;
+  margin: 4% 0;
+  font-weight: bolder;
+}
+
+.newsSrcDateRead {
+  display: flex;
+  height: 50rpx;
+  padding-bottom: 50rpx;
+  text-align: center;
+  font-size: 30rpx;
+  line-height: 42rpx;
+  opacity: 0.5;
+}
+
+.newsSrc {
+  padding-right: 5%;
+}
+
+.newsDate {
+  padding-right: 20%;
+}
+
+.newsRead {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.newsStrong {
+  font-size: 32rpx;
+  line-height: 44.8rpx;
+  opacity: 0.9;
+  font-weight: bold;
+  padding-bottom: 30rpx;
+}
+
+.newsImage {
+  width: 675rpx;
+  padding-bottom: 20rpx;
+}
+
+.newsParagraph {
+  font-size: 32rpx;
+  line-height: 44.8rpx;
+  opacity: 0.9;
+  padding-bottom: 20rpx;
+}

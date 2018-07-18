@@ -1,0 +1,19 @@
+<view class="navigationBar">  
+  <view class="navigation-item" wx:for="{{categories}}" wx:for-index="idx" data-idx="{{idx}}" bindtap="swichNavigation">
+    <text class="navigation-text {{currentTab===idx ? 'active' : ''}}">{{item.categoryName}}</text>
+  </view>
+</view>
+
+<view class="news-list">
+  <view wx:for="{{newsInformation}}" class="news-item" id="{{item.id}}" bindtap="newsDetail">
+    <view class="news-text">
+      <view class="news-description">{{item.title}}</view>
+      <view class="news-srcDate">
+        <view wx:if="{{item.source !== ''}}" class="news-src">{{item.source}}</view>
+        <view class="news-date">{{item.date}}</view>
+      </view>
+    </view>
+    <image wx:if="{{item.firstImage !== ''}}" class="news-picture" src="{{item.firstImage}}"></image>
+    <image wx:if="{{item.firstImage == ''}}" class="news-picture" src="/images/bizhi001.jpg"></image>
+  </view>
+</view>

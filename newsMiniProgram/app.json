@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#4169E1",
+    "navigationBarTitleText": "悦读·资讯",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  }
+}

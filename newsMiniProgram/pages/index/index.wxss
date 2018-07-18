@@ -1,0 +1,83 @@
+.navigationBar{
+  top: 0;
+  width: 750rpx;
+  position: fixed;
+  display: flex;
+  background: #4169E1;
+}
+
+.navigation-item{
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.navigation-text.active{
+  color: #FFCC00;
+}
+
+.navigation-text.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 25rpx;
+  right: 25rpx;
+  height: 8rpx;
+  background: #FFCC00;
+}
+
+.news-list {
+  margin-top: 80rpx;
+  top: 0rpx;
+  bottom: 0rpx;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.news-item {
+  display: flex;
+  align-items: center;
+  height: 150rpx;
+  margin: 0 40rpx;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.news-text {
+  z-index: -1; /*这个样式设置可以保证向下滑动时上方的文字不会与导航栏重叠出现*/
+  position: absolute left;
+  flex-grow: 1;
+  padding-right: 20rpx;
+  height: 120rpx;
+  width: 470rpx;
+}
+
+.news-description {
+  opacity: 0.8;
+  font-size: 30rpx;
+  line-height: 45rpx;
+  height: 90rpx;
+}
+
+.news-srcDate {
+  display: flex;
+  opacity: 0.5;
+  font-size: 25rpx;
+  line-height: 30rpx;
+}
+
+.news-src {
+  padding-right: 50rpx;
+}
+
+.news-picture {
+  z-index: -1;
+  position: absolute right;
+  width: 200rpx;
+  height: 120rpx;
+}
